@@ -10,12 +10,14 @@
  */
 
 PShape bot;
+PImage img;
 
 void setup() {
-  size(640, 360);
+  size(1200, 1200);
   // The file "bot1.svg" must be in the data folder
   // of the current sketch to load successfully
   bot = loadShape("bot1.svg");
+  img = loadImage("bot1.png");
   noLoop();
 } 
 
@@ -24,8 +26,11 @@ void draw() {
   
   // Draw left bot
   bot.disableStyle();  // Ignore the colors in the SVG
-  fill(0, 102, 153);  // Set the SVG fill to blue
+  int x = (int) mouseX;
+  int y = (int) mouseY;
+  fill(x, y, 0);  // Set the SVG fill to blue
   stroke(255);  // Set the SVG fill to white
+  bot.scale(3.0);
   shape(bot, 20, 25, 300, 300);
 
   // Draw right bot

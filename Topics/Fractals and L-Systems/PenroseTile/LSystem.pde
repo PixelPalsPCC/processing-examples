@@ -15,8 +15,8 @@ class LSystem
   LSystem() {
     axiom = "F";
     rule = "F+F-F";
-    startLength = 190.0;
-    theta = radians(120.0);
+    startLength = 70.0;
+    theta = radians(90.0);
     reset();
   }
 

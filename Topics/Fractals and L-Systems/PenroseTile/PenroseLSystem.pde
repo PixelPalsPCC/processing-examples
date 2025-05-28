@@ -8,13 +8,13 @@ class PenroseLSystem extends LSystem {
   String ruleZ;
 
   PenroseLSystem() {
-    axiom = "[X]++[X]++[X]++[X]++[X]";
+    axiom = "[X]++[X]++[X]++[X]++[X]++[X]";
     ruleW = "YF++ZF4-XF[-YF4-WF]++";
     ruleX = "+YF--ZF[3-WF--XF]+";
     ruleY = "-WF++XF[+++YF++ZF]-";
     ruleZ = "--YF++++WF[+ZF++++XF]--XF";
     startLength = 460.0;
-    theta = radians(36);  
+    theta = radians(18);  
     reset();
   }
 

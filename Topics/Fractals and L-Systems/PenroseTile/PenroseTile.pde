@@ -8,9 +8,9 @@
 PenroseLSystem ds;
 
 void setup() {
-  size(640, 360);
+  size(800, 800);
   ds = new PenroseLSystem();
-  ds.simulate(4);
+  ds.simulate(5);
 }
 
 void draw() {
